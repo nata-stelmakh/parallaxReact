@@ -8,12 +8,20 @@ const image2 =
 const image3 =
   "https://www.pexels.com/photo/green-vegetable-on-brown-wooden-chopping-board-4964098/";
 
+const inlineStyle = {
+  background: "#fff",
+  left: "50%",
+  right: "50%",
+  position: "absolute",
+  padding: "20px",
+  transform: "translate(-50%, -50%)",
+};
 function App() {
   return (
     <div className="App">
       <Parallax bgImage={image1}>
         <div style={{ height: 500 }}>
-          <div>The Food That Brings Joy</div>
+          <div style={inlineStyle}>The Food That Brings Joy</div>
         </div>
       </Parallax>
     </div>
